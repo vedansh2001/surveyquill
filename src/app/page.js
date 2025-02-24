@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold mb-4 text-blue-600">Welcome to Next.js Auth</h1>
-      <p className="text-lg text-gray-700">A simple authentication system using Next.js.</p>
+      <h1 className="text-4xl font-bold mb-4 text-blue-600">Welcome to Auth</h1>
+      <p className="text-lg text-gray-700">A simple authentication system.</p>
 
       {user ? (
         <>
