@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from "next/navigation"; 
+import Link from 'next/link';
 
 // Validate email function (if not importing)
 const validateEmail = (email) => {
@@ -76,6 +77,10 @@ export default function Login() {
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 text-black"
               required
             />
+          </div>
+          <div className='text-black flex justify-center items-center'>
+            Create an account? 
+            <Link href={"/pages/signup"} className='text-blue-600 ml-1'>signup</Link>
           </div>
           <button
             type="submit"

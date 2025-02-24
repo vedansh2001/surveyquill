@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from "next/navigation"; 
 import { validateEmail, validatePassword, handleSignup } from '../api/auth';
+import Link from 'next/link';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
@@ -63,6 +64,10 @@ export default function Signup() {
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 text-black"
               required
             />
+          </div>
+          <div className='text-black flex justify-center items-center'>
+            Already have an account? 
+            <Link href={"/pages/login"} className='text-blue-600 ml-1'>signin</Link>
           </div>
           <button
             type="submit"
